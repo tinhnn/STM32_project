@@ -26,7 +26,7 @@ namespace Pulse_setting
                 {
                     comboBox1.Items.Add(port);
                 }
-                comboBox1.Text = comboBox1.Items[0].ToString();
+                comboBox1.Text = "";
                 var _ports = searcher.Get().Cast<ManagementBaseObject>().ToList();
                 var tList = (from n in portnames
                              join p in _ports on n equals p["DeviceID"].ToString()
