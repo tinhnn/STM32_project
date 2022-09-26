@@ -86,5 +86,10 @@ namespace Pulse_setting
                 btn_snd.Enabled = false;
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //
+        }
     }
 }
